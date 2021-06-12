@@ -1,1 +1,1 @@
-# Emo-api
+# EmoApi
