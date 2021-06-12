@@ -15,8 +15,8 @@ psycopg2==2.8.6
 pytz==2021.1
 six==1.15.0
 sqlparse==0.4.1
-torch==1.8.1+cpu
-torchvision==0.4.2
+https://download.pytorch.org/whl/cu111/torch-1.8.1%2Bcu111-cp38-cp38-win_amd64.whl
+https://download.pytorch.org/whl/cu101/torchvision-0.6.0%2Bcu101-cp38-cp38-win_amd64.whl
 typing-extensions==3.7.4.3
 uuid==1.30
 virtualenv==20.4.3
