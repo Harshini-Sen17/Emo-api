@@ -23,4 +23,3 @@ uuid==1.30
 virtualenv==20.4.3
 whitenoise==5.2.0
 zipp==3.4.1
-opencv-python-headless==4.2.0.32
