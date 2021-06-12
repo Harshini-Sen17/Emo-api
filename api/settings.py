@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '8!6^n2ie@0!&^cjmp!vgnejfmr@1u$qg61+9(f-g+_$j0&ty7_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://deploy-emoapi.herokuapp.com']
+ALLOWED_HOSTS = ['https://deploy-emoapi.herokuapp.com','*']
 
 
 # Application definition
