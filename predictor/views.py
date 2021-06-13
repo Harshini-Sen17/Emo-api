@@ -93,10 +93,11 @@ def predictImage(request):
     imgstr = request.data['base64']
     # image = decodeDesignImage(testimage)
     # print("testimage",testimage)
+
     # format, imgstr = testimage.split(';base64,') 
     # ext = format.split('/')[-1] 
 
-    data = ContentFile(base64.b64decode(imgstr), name='temp.' + ext) 
+    data = ContentFile(base64.b64decode(imgstr), name='temp.' + 'jpeg') 
    
     image = grab_image(stream=data)
     img_gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
