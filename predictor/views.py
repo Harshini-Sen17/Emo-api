@@ -25,10 +25,10 @@ import base64
 import uuid
 
 
-face_classifier = cv2.CascadeClassifier('predictor\model\haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier('\app\predictor\model\haarcascade_frontalface_default.xml')
 
 img_height,img_width = 48,48
-path='predictor\model\emotion_detection_model_state.pth'
+path='\app\predictor\model\emotion_detection_model_state.pth'
 model_state = torch.load(path,map_location=torch.device('cpu'))
 
 class_labels = ['Angry', 'Happy', 'Neutral', 'Sad', 'Suprise']
