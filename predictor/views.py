@@ -146,7 +146,7 @@ def songFetchingView(md = []):
     ser = []
     print('í m here')
     for m in md:
-        task = Song.objects.get(mood = m)
+        task = Song.objects.filter(mood = m)
         serializer = SongSerializer(instance = task)
         ser.append(serializer.data)
         print(ser)
