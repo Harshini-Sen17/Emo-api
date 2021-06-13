@@ -162,18 +162,18 @@ def playlistView(request,la):
         print('why')     
         context = songFetchingView(['Sad'])
         return Response(context)
-    # if la == 'Happy':
-    #     context = songFetchingView(['Happy'])
-    #     return Response(context)    
-    # if la == 'Angry':
-    #     context = songFetchingView(['Relaxing'])
-    #     return Response(context)
-    # if la == 'Neutral':
-    #     context = songFetchingView(['Relaxing','Happy','Sad'])
-    #     return Response(context)
-    # if la == 'Surprised':
-    #     context = songFetchingView(['Relaxing','Happy','Sad'])
-    #     return Response(context)
+    if la == 'Happy':
+        context = songFetchingView(['Happy'])
+        return Response(context)    
+    if la == 'Angry':
+        context = songFetchingView(['Relaxing'])
+        return Response(context)
+    if la == 'Neutral':
+        context = songFetchingView(['Relaxing','Happy','Sad'])
+        return Response(context)
+    if la == 'Surprised':
+        context = songFetchingView(['Relaxing','Happy','Sad'])
+        return Response(context)
     return Response('error')
 
 
