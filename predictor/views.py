@@ -144,10 +144,10 @@ def songUploadView(request):
 
 def songFetchingView(md = []):
     ser = []
-    print('í m here')
+    
     for m in md:
         task = Song.objects.filter(mood = m)
-        serializer = SongSerializer(instance = task)
+        serializer = SongSerializer(task,many = True)
         ser.append(serializer.data)
         print(ser)
     return ser
@@ -156,10 +156,10 @@ def songFetchingView(md = []):
 # @permission_classes([IsAuthenticated])
 def playlistView(request,la):
     context=[]
-    print(la)
+    
 
     if la == 'Sad':   
-        print('why')     
+           
         context = songFetchingView(['Sad'])
         return Response(context)
     if la == 'Happy':
